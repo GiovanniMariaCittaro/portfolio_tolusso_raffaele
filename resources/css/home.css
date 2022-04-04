@@ -1,0 +1,131 @@
+/* General */
+
+/* .purple-background {
+    background: url(/img/purple_background_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.purple-background {
+    background: url(/img/blue_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .light-purple-background {
+    background: rgb(112,39,195);
+} */
+
+.light-purple-background {
+    background: #0583d2;
+}
+
+.section-background {
+    background: rgba(0,0,0,.2);
+    border-radius: 20px;
+}
+
+/* Description Table */
+
+.description-table {
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 30%);
+}
+
+/* About Me */
+
+#about-me {
+    
+}
+
+/* Projects */
+
+.project {
+    background:rgba(0,0,0,.2);
+    width:12rem;
+    height:12rem;
+    /* transition: width .5s, height .5s, border-radius .5s, padding-right .5s, padding-left .5s, flex-direction .5s; */
+}
+
+.project-img {
+    width:9rem;
+    height:9rem;
+    border: 6px solid #0583d2;
+    transition: width 1s, height 1s;
+}
+
+.project-description {
+    display:none;
+    opacity: 0;
+    width:96%;
+    top: 13rem;
+    z-index: 10;
+    transition: opacity 1s;
+}
+
+/* Contacts */
+
+.contact {
+    list-style-type: none;
+}
+
+/* Left Navbar Begin */
+
+.navbar-text {
+    transition: font-size .5s;
+}
+
+/* Left Navbar End */
+
+/* HoverS */
+
+/* Projects Begin */
+
+/* .project:hover {
+    width: 16rem;
+    height: 30rem;
+    flex-direction: column;
+    border-radius:20px !important;
+    padding-right: calc(var(--bs-gutter-x) * 0.5) !important;
+    padding-left: calc(var(--bs-gutter-x) * 0.5) !important;
+} */
+
+.project-img:hover {
+    width: 12rem;
+    height: 12rem;
+}
+
+.project-img:hover + .project-description {
+    /* width: 12rem;
+    height: 12rem; */
+    opacity: 1;
+} 
+
+
+
+/* Projects End */
+
+/* Left-Navbar */
+
+.navbar-text:hover {
+    font-size: 2rem !important;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width:831px) {
+    .project {
+        width: 100%;
+        height: 30rem;
+        flex-direction: column;
+        border-radius:20px !important;
+        padding-right: calc(var(--bs-gutter-x) * 0.5) !important;
+        padding-left: calc(var(--bs-gutter-x) * 0.5) !important;
+    }
+    .project-description {
+        display:block;
+    }
+}
+
+
+
